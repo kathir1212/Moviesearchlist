@@ -81,8 +81,10 @@ function Home() {
 <img src={movie.Poster} alt={movie.Title} className="rounded-t-lg w-full h-48 object-cover" />
 </Link>
             <div className="p-4">
+            <Link to={`product/${movie.imdbID}`}>
               <h5 className="text-lg font-bold">{movie.Title}</h5>
-            </div>
+              </Link>         
+                 </div>
           </div>
         ))}
       </div>
